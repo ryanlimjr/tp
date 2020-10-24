@@ -14,13 +14,13 @@ public interface UniqueList<T> extends Iterable<T> {
     /**
      * Returns true if the list contains an equivalent element as the given argument.
      */
-    boolean contains(T toCheck);
+    public boolean contains(T toCheck);
 
-    ObservableList<T> getList();
+    public ObservableList<T> getList();
 
-    void sort(Comparator<T> comparator);
+    public void sort(Comparator<T> comparator);
 
-    Stream<T> stream();
+    public Stream<T> stream();
 
     /**
      * Returns the size of the list.
