@@ -11,7 +11,7 @@ import team.serenity.model.group.Group;
 import team.serenity.model.group.Student;
 import team.serenity.model.util.UniqueList;
 
-public class StudentManager {
+public class StudentManager implements ReadOnlyStudentManager {
 
     private final Map<Group, UniqueList<Student>> mapToListOfStudents;
 
