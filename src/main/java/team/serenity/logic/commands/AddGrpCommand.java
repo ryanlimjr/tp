@@ -29,7 +29,7 @@ public class AddGrpCommand extends Command {
      * Creates an AddGrpCommand to add the specified {@code Group}.
      */
     public AddGrpCommand(Group group) {
-        //requireNonNull(group);
+        requireNonNull(group);
         assert group != null;
         this.toAdd = group;
     }
