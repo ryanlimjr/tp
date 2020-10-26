@@ -29,14 +29,14 @@ public class AddGrpCommand extends Command {
      * Creates an AddGrpCommand to add the specified {@code Group}.
      */
     public AddGrpCommand(Group group) {
-        requireNonNull(group);
+        //requireNonNull(group);
+        assert group != null;
         this.toAdd = group;
     }
 
     @Override
     public CommandResult execute(Model model) throws CommandException {
         requireNonNull(model);
-
         if (model.hasGroup(this.toAdd)) {
             throw new CommandException(MESSAGE_DUPLICATE_GROUP);
         }
