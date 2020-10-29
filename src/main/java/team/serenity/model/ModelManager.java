@@ -191,6 +191,7 @@ public class ModelManager implements Model {
 
     @Override
     public void deleteGroup(Group group) {
+        assert group != null;
         this.groupManager.deleteGroup(group);
         this.studentManager.deleteAllStudentsFromGroup(group);
         this.studentInfoManager.deleteAllStudentInfosFromGroup(group);
