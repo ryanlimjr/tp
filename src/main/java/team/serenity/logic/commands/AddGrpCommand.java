@@ -36,13 +36,13 @@ public class AddGrpCommand extends Command {
      */
     public AddGrpCommand(Group group) {
         requireNonNull(group);
+        assert group != null;
         this.toAdd = group;
     }
 
     @Override
     public CommandResult execute(Model model) throws CommandException {
         requireNonNull(model);
-
         // Check if group name already exists in the group manager
         if (model.hasGroupName(this.toAdd.getGroupName())) {
             throw new CommandException(String.format(MESSAGE_DUPLICATE_GROUP_NAME_FORMAT,
