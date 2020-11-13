@@ -10,6 +10,8 @@ title: User guide
 
 ## **1. Introduction**
 
+(Contributed by Chun Yong)
+
 ![Serenity Logo](images/logo.png)
 
 Welcome to the User Guide of **Serenity**!
@@ -29,6 +31,8 @@ With that said, let's get [started](#2-quick-start)!
 --------------------------------------------------------------------------------------------------------------------
 
 ## **2. Quick start**
+
+(Contributed by Chun Yong)
 
 To get started with using **Serenity**, you can follow these steps:
 
@@ -54,6 +58,8 @@ To get started with using **Serenity**, you can follow these steps:
 --------------------------------------------------------------------------------------------------------------------
 
 ## **3. About**
+
+(Contributed by Rui En)
 
 ### 3.1. Structure of this document
 
@@ -105,6 +111,8 @@ existing tutorial groups.
 <div style="page-break-after: always;"></div>
 
 #### 3.2.2. Layout of the _GUI_
+
+(Contributed by Wen Jin)
 
 **Serenity** is divided into these 3 pages:
 
@@ -178,6 +186,8 @@ you may add, edit, find or delete a [question](#44-question-addressing) that was
 
 #### 3.2.3. General symbols and syntax
 
+(Contributed by Rui En)
+
 The table below explains the general symbols and syntax used throughout the document.
 
 <div style="page-break-after: always;"></div>
@@ -191,6 +201,8 @@ _GUI_ | This indicates a graphical component, such as a button, layout format an
 :warning: | This indicates a warning.
 
 #### 3.2.4. Command syntax and usage
+
+(Contributed by Rui En)
 
 The table below explains some important technical terms.
 
@@ -241,6 +253,8 @@ Analysis:
 
 ## **4. Features**
 
+(Contributed by Rui En and Wen Jin)
+
 This section contains all the information you need to know about the features of **Serenity**.
 To use each feature or sub-feature, you will need to enter the command into the _Command Box_.
 Below is an overview of the features available in **Serenity** :
@@ -253,14 +267,20 @@ Below is an overview of the features available in **Serenity** :
 
 ### 4.1. Setting Up
 
+(Contributed by Chun Yong)
+
 It is the start of the semester! Brand-new classes, brand-new students and a whole new experience.
 Follow the instructions below to set up your new classes, and watch **Serenity** do the magic for you.
 
 #### 4.1.1. Add a new tutorial group from XLSX file: `addgrp`
 
+(Contributed by Rui En)
+
 You can use this command to add a new tutorial group automatically from XLSX data.
 
 <div markdown="block" class="alert alert-info">
+
+(Contributed by Ryan)
 
 :information_source: **Notes regarding the `addgrp` command:**
 
@@ -268,7 +288,7 @@ You can use this command to add a new tutorial group automatically from XLSX dat
 * The XLSX file should store a list of students.
 * The list of students you are importing cannot exist in another tutorial group.
 * The format of the XLSX file should be the same as the XLSX file that you may download from LUMINUS. 
-Examples of valid and invalid file formats can be found in the [XLSX file format documentaion](/XlsxFileFormat.md)
+Examples of valid and invalid file formats can be found in the [XLSX file format documentation](/XlsxFileFormat.md)
 * To obtain the PATH_TO_XLSX, either:<br>
    * Get the location of the XLSX file in your computer.<br>
      e.g. `addgrp grp/G04 path/C:\Users\serene\CS2101_G04.xlsx`<br>
@@ -331,6 +351,8 @@ Outcome:
 
 ####  4.1.2. Delete an existing tutorial group: `delgrp`
 
+(Contributed by Rui En)
+
 You can use this command to delete an existing tutorial group.
 
 <div markdown="block" class="alert alert-info">
@@ -364,6 +386,8 @@ Outcome:
 3. You can now see that tutorial group `G01` no longer exists.
 
 #### 4.1.3. Add a new tutorial lesson: `addlsn`
+
+(Contributed by Ryan)
 
 You can use this command to add a new tutorial lesson for a specified tutorial group.
 
@@ -403,6 +427,8 @@ Outcome:
 
 #### 4.1.4. Delete an existing tutorial lesson: `dellsn`
 
+(Contributed by Ryan)
+
 You can use this command to delete an existing lesson from a specified tutorial group.
 
 **Format:**
@@ -428,6 +454,8 @@ Outcome:
 
 #### 4.1.5. Add a new student: `addstudent`
 
+(Contributed by Chun Yong)
+
 You can use this command to add a new student to a tutorial group.
 
 **Format:**
@@ -450,6 +478,8 @@ Outcome:
 2. `David Chong` will be added to the list of students in tutorial group `G01`.
 
 #### 4.1.6. Delete an existing student: `delstudent`
+
+(Contributed by Chun Yong)
 
 You can use this command to delete an existing student from a tutorial group.
 
@@ -491,6 +521,8 @@ Outcome:
 <div style="page-break-after: always;"></div>
 
 ### 4.2. Attendance taking
+
+(Contributed by Xin Yee)
 
 Need to mark attendance of your students at the start of each lesson quickly?
 This feature allows you to mark attendance of students easily.
@@ -754,6 +786,8 @@ Outcome:
 
 #### 4.2.7. Export attendance as XLSX file: `exportatt`
 
+(Contributed by Rui En)
+
 You can use this command to export the attendance sheet of a specific tutorial group as a new Excel file.
 
 <div markdown="block" class="alert alert-primary">
@@ -800,6 +834,8 @@ You can find the XLSX file at the location where your **Serenity** application i
 <p align="center"><i>Figure 4.2.7.2 Contents of excel file generated.</i></p>
 
 ### 4.3. Participation marking
+
+(Contributed by Xin Yee)
 
 Need to keep track of all your students' participation during lessons quickly? This feature allows you to key in a 
 student's participation score easily with a scale for reference.
@@ -961,6 +997,8 @@ Outcome:
 
 #### 4.3.4. Export participation scores as XLSX file: `exportscore`
 
+(Contributed by Rui En)
+
 You can use this command to export the participation score sheet of a specific tutorial group as a new Excel file.
 
 <div markdown="block" class="alert alert-info">
@@ -993,6 +1031,8 @@ Outcome:
 You can find the XLSX file at the location where your **Serenity** application is located.
 
 ### 4.4. Question addressing
+
+(Contributed by Wen Jin)
 
 Need to keep track of all your students' questions during lessons quickly? This feature allows you to key in questions
 easily for future reference.
@@ -1125,6 +1165,8 @@ The following commands allow you to navigate between different views.
 
 #### 4.5.1. View a tutorial group: `viewgrp`
 
+(Contributed by Ryan)
+
 You can use this command to view the list of students and tutorial lessons of a tutorial group.
 You will also be able to execute tutorial group-related commands.
 
@@ -1169,6 +1211,8 @@ Outcome:
 
 #### 4.5.2. View a tutorial lesson: `viewlsn`
 
+(Contributed by Wen Jin)
+
 You can use this command to view and modify the attendance and participation scores of 
 a tutorial lesson. You will also be able to execute tutorial lesson-related commands.
 
@@ -1197,6 +1241,8 @@ Outcome:
 <p align="center"><i>Figure 4.5.2.1 User interface for viewing tutorial lesson.</i></p>
 
 #### 4.5.3. View attendance sheet of a tutorial group: `viewatt`
+
+(Contributed by Rui En)
 
 You can use this command to view the attendance sheet of the students in a tutorial group across all tutorial lessons.
 The attendance sheet will be displayed in table form.
@@ -1239,6 +1285,8 @@ Outcome:
 
 #### 4.5.4. View participation score sheet of a tutorial group: `viewscore`
 
+(Contributed by Rui En)
+
 You can use this command to view the participation score sheet of the students in a tutorial group
 across all tutorial lessons. The participation score sheet will be displayed in table form.
 
@@ -1275,6 +1323,8 @@ Outcome:
 <p align="center"><i>Figure 4.5.4.1 User interface for viewing tutorial participation score sheet.</i></p>
 
 #### 4.5.5. View flagged attendance: `viewflag`
+
+(Contributed by Rui En)
 
 You can use this command to view students with their attendance marked as flagged across all tutorial lessons.
 
@@ -1323,6 +1373,8 @@ Outcome:
 
 #### 4.5.6. View pending questions: `viewqn`
 
+(Contributed by Wen Jin)
+
 You can use this command to view questions that were asked across all tutorial lessons
 and have yet to be addressed.
 
@@ -1369,6 +1421,9 @@ Outcome:
 
 --------------------------------------------------------------------------------------------------------------------
 
+(Contributed by Chun Yong)
+
+
 ## **5. FAQ**
 
 **Q:** How many tutorial groups can I manage in **Serenity**?
@@ -1384,6 +1439,8 @@ your **Serenity** application on your other computer. **Serenity** will automati
 --------------------------------------------------------------------------------------------------------------------
 
 ## **6. Command summary**
+
+(Contributed by The Serenity Team)
 
 ### 6.1. Setup commands 
 
