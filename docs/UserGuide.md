@@ -1174,7 +1174,7 @@ You will also be able to execute tutorial group-related commands.
 
 :bulb: **Tip for the `viewgrp` command:**
 
-You can easily navigate to the tutorial group by pressing its button in the Side_Bar as well!
+You can easily navigate to the tutorial group by pressing its button in the _Side Bar_ as well!
 Pressing the tutorial group's button equals to typing this command.
     
 </div>
