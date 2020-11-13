@@ -381,7 +381,7 @@ Deleting an existing tutorial group:
 Outcome:
 
 1. The _Result Display_ will show a success message.
-2. The button named `G01` will be removed from the _Side_Bar_.
+2. The button named `G01` will be removed from the _Side Bar_.
 2. **Serenity** will exit tutorial group `G01` page.
 3. You can now see that tutorial group `G01` no longer exists.
 
@@ -1198,7 +1198,7 @@ Viewing a tutorial group by typing the following command:
 
 Viewing a tutorial group by pressing the group button:
 
-1. Press the button named `G01` in the Side_Bar.
+1. Press the button named `G01` in the _Side Bar_.
 
 Outcome:
 
@@ -1332,7 +1332,7 @@ You can use this command to view students with their attendance marked as flagge
     
 :bulb: **Tip for the `viewflag` command:**
 
-You can easily navigate to the flagged attendance list by pressing the "Flag" button in the Side_Bar as well!
+You can easily navigate to the flagged attendance list by pressing the "Flag" button in the _Side Bar_ as well!
 Pressing the button equals to typing this command.
     
 </div>
@@ -1382,7 +1382,7 @@ and have yet to be addressed.
     
 :bulb: **Tip for the `viewqn` command:**
 
-You can easily navigate to the pending questions list by pressing the "Qns" button in the Side_Bar as well!
+You can easily navigate to the pending questions list by pressing the "Qns" button in the _Side Bar_ as well!
 Pressing the button equals to typing this command.
     
 </div>
