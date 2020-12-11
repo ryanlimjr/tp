@@ -14,30 +14,39 @@ Class hideOutside <<HiddenOutside>>
 
 Package Model <<Rectangle>>{
 Interface ObservableList <<Interface>>
+Interface Models <<Interface>>
+Interface ReadOnlyUserPrefs <<Interface>>
+Interface ReadOnlyXYZBook <<Interface>>
 Interface Model <<Interface>>
-Class ReadOnlyUserPrefs <<Interface>>
-Interface UniqueList <<Interface>>
-Class ModelManager
+Class ModelManagers
 Class UserPrefs
 Class UniqueXYZList
-Class XYZManager
+Class XYZModelManager
+Class ItemComparator
+Class XYZBook
+Interface XYZModel <<Interface>>
+Class XYZ
+note right of XYZ
+    XYZ = Item, Delivery
+    UniqueXYZList = UniqueItemList, UniqueDelivery List
+    XYZBook = ItemBook, DeliveryBook
+end note
 }
 
-Model .left.> ObservableList : \t
-hideOutside ..> Model :\t
-ModelManager o-down-> XYZManager : \t
-ModelManager o-right-> UserPrefs : \t
-XYZManager o-left->"0..*"UniqueXYZList :\t
-UniqueXYZList .up.|> UniqueList : \t
-ModelManager .up.|> Model : \t
-UserPrefs .up.|> ReadOnlyUserPrefs :\t
+hideOutside ..> Models
+ModelManagers .U.|> Models
+ModelManagers o-L-> "2" XYZModel
+XYZModel o-L-> "0..1" ItemComparator
+XYZModel .U.|> Model
+XYZModel .U.|> ObservableList
+XYZModelManager .U.|> XYZModel
+XYZModelManager o--> UserPrefs
+XYZModelManager o--> "1" XYZ
+XYZModelManager o--> XYZBook
+XYZBook "1..20" o-D-> "1" UniqueXYZList
+XYZBook .U.|> ReadOnlyXYZBook
+UniqueXYZList o--> "*" XYZ
+UserPrefs .U.|> ReadOnlyUserPrefs
 
-note right of XYZManager
-XYZManager = GroupManager,
-StudentManager, etc
-
-UniqueXYZList = UniqueGroupList,
-UniqueStudentList, etc
-end note
 
 @enduml
